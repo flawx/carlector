@@ -2,9 +2,6 @@
 include "verifText.php";
 include "connection.php";
 
-$Lib1Lang = "";
-$Lib2Lang = "";
-$numPays = "";
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -53,6 +50,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                     $stmt->bindParam(':NumPays', $numPays);
 
                     $stmt->execute();
+                   
                 } catch (\Throwable $th) {
                     //throw $th;
                 }
@@ -80,9 +78,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <h1>Ajoutez une langue</h1>
         <form method="post" action="index.php">
-            <div class="form-group">
-                <label for="Lib1Lang">Libellé court</label>
-                <input type="text" class="form-control" id="Lib1Langs" name="Lib1Langs" maxlength="25" placeholder="Libellé court" autofocus="autofocus" 
+            <div class="form-group">Nom court</label>
+                <input type="text" class="form-control" id="Lib1Langs" name="Lib1Langs" maxlength="25" placeholder="ex : Chinois" autofocus="autofocus" 
                 value="<?php 
                         if(isset($_GET["id"])) {
                             echo $_POSt["LibLang1"];
@@ -90,8 +87,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                         ?>">
             </div>
             <div class="form-group">
-                <label for="Lib2Lang">Libellé long</label>
-                <input type="text" class="form-control" id="Lib2Langs" name="Lib2Langs" maxlength="25" placeholder="Libellé long">
+                <label for="Lib2Lang">Nom complet</label>
+                <input type="text" class="form-control" id="Lib2Langs" name="Lib2Langs" maxlength="25" placeholder="ex : Langue chinoise">
             </div>
             <div class="form-group">
                 <label for="TypPays">Num pays</label>

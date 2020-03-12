@@ -25,6 +25,7 @@ if(isset($_POST['delete']))
     <title>BlogArt</title>
 </head>
 <body>
+    <a href="index.php" >Voir le formulaire </a>
     <div class="container">
         <h1>Langues</h1>
         <?php
@@ -52,8 +53,8 @@ if(isset($_POST['delete']))
                     <th><?php echo $donnees['Lib1Lang'];?></th>
                     <th><?php echo $donnees['Lib2Lang'];?></th>
                     <th><?php echo $donnees['NumPays'];?></th>
-                    <th><a href="UPDLang1.php?NumPays=<?php echo $donnees['NumLang'];?>">✏️</a></th>
-                    <th><form method="post" action=""><input type="hidden" name="NumLang" value="<?php echo $donnees['NumLang'];?>"><input type="submit" name="delete" value="❌" onClick="alert('Souhaitez-vous vraiment supprimer cette langue ?');"></form></th>
+                    <th><a href="update.php?id=<?= $donnees['NumLang'];?>">✏️</a></th>
+                     <th><a href="delete.php?id=<?= $donnees['NumLang'];?>">❌</a></th>
                 </tr>
             <?php
             
