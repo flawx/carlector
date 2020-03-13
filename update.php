@@ -49,7 +49,7 @@ include './connection.php';
 
 				$NumLang = $_GET['id'];
 				$requete = "SELECT * FROM LANGUE WHERE NumLang = :NumLang;";
-				$query = $bdPdo->prepare($requete);
+				$query = $conn->prepare($requete);
 
 				$query->execute(
 					array(
