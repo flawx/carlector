@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Agency FB';
+    src: url('AgencyFB-Reg.woff2') format('woff2'),
+        url('AgencyFB-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p, a, span {
+    font-family: 'Bree Serif';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Agency FB' !important;
+}
+
+#header {
+    max-height: 125px;
+    background-color: #7f1f1f;
+    color: #fff;
+    border-bottom: solid 5px #214851;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+@media screen and (min-width: 1148px) {
+    .nav-left {
+        padding-left: 150px;
+    }
+    .nav-right {
+        padding-right: 150px;
+    }
+}
+
+@media screen and (max-width: 1148px) and (min-width: 948px) {
+    .nav-left {
+        padding-left: 50px;
+    }
+    .nav-right {
+        padding-right: 50px;
+    }
+}
+
+a.nav {
+    font-size: xx-large;
+    margin: 25px;
+    color: #fff;
+    font-family: 'Agency FB';
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a.nav:visited, a.nav:focus {
+    color: #fff;
+}
+
+a.nav:hover {
+    text-decoration: underline;
+    text-decoration-color: #cd8b34ff;
+}
+
+a.logo img {
+    width: 175px;
+    z-index: 99;
+}
+
+.w3-white {
+    box-shadow: none;
+    border: solid 2px gray;
+}
