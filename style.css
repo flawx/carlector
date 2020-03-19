@@ -71,7 +71,20 @@ a.logo img {
     z-index: 99;
 }
 
+.body {
+    padding: 50px;
+}
+
 .w3-white {
     box-shadow: none;
     border: solid 2px gray;
+}
+
+.article-header {
+    padding: 15px;
+}
+
+.article-title {
+    text-align: center;
+    text-transform: uppercase;
 }
