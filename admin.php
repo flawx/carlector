@@ -140,7 +140,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $reponse = $bdPdo->query('SELECT * FROM article');
             
             ?>
-            <hr>
+            <hr class="hr">
             <h3>Nouvel article :</h3>
             <form method="POST" action="">
                 <input type="hidden" id="id" name="id" value="">
@@ -222,7 +222,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <br>
                 </div>
             </form>
-            <hr>
+            <hr class="hr">
             <h3>Tous les articles :</h3>
             <table>
                 <tr>
