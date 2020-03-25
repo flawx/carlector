@@ -254,8 +254,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <th><?php echo $tuple['NumAngl'];?></th>
                     <th><?php echo $tuple['NumThem'];?></th>
                   
-					<th><a href="Article/DelArt.php?id=<?= $tuple["NumArt"] ?>">❌</a></th>
-					<th><a href="Article/UpdArt.php?id=<?= $tuple["NumArt"] ?>">✏️</a></th>
+					<th><a href="delart.php?id=<?= $tuple["NumArt"] ?>">❌</a></th>
+					<th><a href="updart.php?id=<?= $tuple["NumArt"] ?>">✏️</a></th>
                 </tr>
                 <?php
                 
