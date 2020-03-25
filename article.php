@@ -26,14 +26,14 @@ if(isset($_GET['id']))
         <body class="w3-light-grey">
 
         <header id="header" class="w3-container w3-center"> 
-            <a class="logo" href=""><img src="Fichier 21.png"></a>
+            <a class="logo" href="/blogart20/"><img src="Fichier 21.png"></a>
             <div class="nav-left w3-padding-32">
                 <a class="nav" href="">Essais</a>
                 <a class="nav" href="">Pratique</a>
             </div>
             <div class="nav-right w3-padding-32">
                 <a class="nav" href="">Marques</a>
-                <a class="nav" href="">Connexion</a>
+                <a class="nav" href="admin.php">Connexion</a>
             </div>
         </header>
 
