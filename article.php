@@ -51,11 +51,12 @@ if(isset($_GET['id']))
         <div class="w3-card-4 w3-margin w3-white">
             <div class="w3-container">
             <p>
-            <?php echo $tuple['Parag1A'];?><br/>
+            <?php echo $tuple['LibAccrochA'];?><br/><br/>
             <h3><?php echo $tuple['LibSsTitr1'];?></h3>
-            <?php echo $tuple['Parag2A'];?><br/>
+            <?php echo $tuple['Parag1A'];?><br/><br/>
             <h3><?php echo $tuple['LibSsTitr2'];?></h3>
-            <?php echo $tuple['Parag3A'];?><br/><br/>
+            <?php echo $tuple['Parag2A'];?><br/><br/>
+            <?php echo $tuple['Parag3A'];?><br/>
             <?php echo $tuple['LibConclA'];?><br/>
             </p>
             </div>

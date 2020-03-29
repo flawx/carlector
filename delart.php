@@ -1,8 +1,8 @@
 <?php
 
-include './initArt.php';
+include 'Article/initArt.php';
 
-include './ConnectBD.php';
+include 'Article/ConnectBD.php';
 	
 	$NumArt = $_GET['id'];
 	$txt = "DELETE FROM ARTICLE WHERE NumArt=:NumArt";
@@ -13,5 +13,5 @@ include './ConnectBD.php';
 		':NumArt' => $NumArt
 		)
 	);
-	header("Location:ReadArt.php");
+	header("Location:index.php");
 ?>
